@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/5a214790e0.js" crossorigin="anonymous"></script>
     <title>Complet Registration</title>
 </head>
 
@@ -32,34 +33,42 @@
     </div>
 
     <form class="forms formBackground">
-        <div class="inputContainer2 shadow">
-            <label class="subtext" for="name">Firstname</label>
-            <input id="Rinfo" type="name" />
-
-            <label class="subtext" for="lastname">Lastname</label>
-            <input id="Rinfo" type="name" />
-
-
-            <label class="subtext" for="
+        <div class="formsRegistration shadow">
+            <div class="inputItem">
+                <label class="subtext" for="name">Firstname</label>
+                <input id="Rinfo" type="name" />
+            </div>
+            <div class="inputItem">
+                <label class="subtext" for="Middlename">Middle Name </label>
+                <input id="Rinfo" type="password" />
+            </div>
+            <div class="inputItem">
+                <label class="subtext" for="lastname">Lastname</label>
+                <input id="Rinfo" type="name" />
+            </div>
+            <div class="inputItem">
+                <label class="subtext" for="
                 Gender">Gender</label>
-            <select id="Rinfo" name="Gender">
+                <select id="Rinfo" name="Gender">
                 <option value="Gender" >Select Gender</option>
                 <option value="Female" >Female</option>
                 <option value="Male" >Male</option>
                 <option value="Others">Others</option>
             </select>
-
-            <label class="subtext" for="Middlename">Middle Name</label>
-            <input id="Rinfo2" type="password" />
-
-            <label class="subtext" for="ReapeatPassword">Repeat Password</label>
-            <input id="Rinfo2" type="password" />
-
-            <div class="controls">
-                <a href="/html/login.html" class="btn3 blue shadow">Proceed</a>
             </div>
-        </div>
+
+            <div class="inputItem">
+                <label class="subtext" for="ReapeatPassword">Repeat Password</label>
+                <input id="Rinfo" type="password" />
+            </div>
+            <div class="inputItem">
+
+            </div>
     </form>
+    <div class="controls3">
+        <a href="/html/login.html" class="btn2 blue shadow">Proceed <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+
 </body>
 
 </html>

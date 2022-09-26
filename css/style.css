@@ -12,7 +12,6 @@
     }
     
     .mainContainer {
-        display: flex;
         width: 100%;
         height: 190vh;
         justify-content: space-around;
@@ -44,26 +43,6 @@
     
     .logo {
         padding-left: 1rem;
-    }
-    
-    .Tbtn {
-        display: flex;
-        padding: 1rem;
-        justify-content: center;
-        align-items: center;
-        outline: none;
-        cursor: pointer;
-        border: none;
-        color: white;
-        margin-left: 77rem;
-        font-size: 18px;
-        font-weight: 500;
-        font-style: normal;
-    }
-    
-    .Tbtn:hover {
-        border: none;
-        transform: scale(1.1);
     }
     
     .Container {
@@ -104,38 +83,6 @@
     .button {
         display: flex;
         margin-left: 33rem;
-    }
-    
-    .btn {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 7vh;
-        padding: 0.5rem;
-        margin: 0.5rem;
-        margin-top: 5rem;
-        outline: none;
-        cursor: pointer;
-        border: none;
-        color: white;
-        font-weight: 500;
-    }
-    
-    .btn:hover {
-        border: none;
-        transform: scale(1.1);
-    }
-    
-    .blue {
-        background-color: #087E8C;
-        border-radius: 10px;
-        width: 214px;
-    }
-    
-    .green {
-        background-color: #A5D053;
-        border-radius: 10px;
-        width: 214px;
     }
     /* LoginPage */
     
@@ -191,16 +138,34 @@
     
     .forms {
         display: flex;
-        height: 120vh;
-        padding-top: 5rem;
-        padding-bottom: 10rem;
+        flex-direction: column;
+        grid-gap: 4%;
+        height: 100vh;
+        width: 100%;
+        align-items: center;
+        padding: 3rem;
+    }
+    
+    .formsRegistration {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        flex-direction: row;
+        width: 90%;
+        padding: 5%;
+        align-items: center;
         justify-content: center;
         border-radius: 5px;
-        background-color: white;
+        background-color: #ffffff;
+    }
+    
+    .inputItem {
+        display: grid;
+        width: 100%;
+        margin: 10px;
     }
     
     .shadow {
-        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
     }
     /* for the input values */
     
@@ -213,7 +178,7 @@
         justify-content: center;
         padding: 3rem;
     }
-    /* Text in unput value */
+    /* Text input value */
     
     #info {
         padding: 1.2rem;
@@ -248,27 +213,6 @@
         justify-content: center;
         font-size: large;
     }
-    
-    .btn2 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 7vh;
-        width: 100%;
-        padding: 0.5rem;
-        margin: 0.5rem;
-        margin-top: 3rem;
-        outline: none;
-        cursor: pointer;
-        border: none;
-        color: white;
-        font-weight: 500;
-    }
-    
-    .btn2:hover {
-        border: none;
-        transform: scale(1.1);
-    }
     /* Registration container */
     
     .register {
@@ -289,23 +233,10 @@
         transform: scale(1.1);
     }
     
-    .btn3 {
+    .controls3 {
         display: flex;
-        align-items: center;
-        height: 7vh;
-        width: 95%;
-        padding-left: 1.5rem;
-        margin-top: 2rem;
-        outline: none;
-        cursor: pointer;
-        border: none;
-        color: white;
-        font-weight: 500;
-    }
-    
-    .btn3:hover {
-        border: none;
-        transform: scale(1.1);
+        font-size: large;
+        margin-left: 0.5rem;
     }
     
     .inputContainer2 {
@@ -316,12 +247,12 @@
     }
     
     #Rinfo {
+        display: grid;
+        grid-template-columns: 45%;
         padding: 1.2rem;
-        width: 50%;
+        width: 80%;
         border: 1px solid rgba(0, 0, 0, 0.17);
         border-radius: 10px;
-        margin-bottom: 1rem;
-        margin: 1rem;
         background: rgba(246, 246, 246, 0.49);
     }
     
@@ -347,6 +278,7 @@
     .forms2 {
         display: flex;
         flex-direction: column;
+        grid-gap: 4%;
         justify-content: center;
         height: 100vh;
         width: 520px;
@@ -380,6 +312,114 @@
         font-size: large;
     }
     
+    .Ellipse2 {
+        margin-left: -20px;
+    }
+    /* buttons */
+    
+    .Tbtn {
+        display: flex;
+        padding: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        color: white;
+        margin-left: 77rem;
+        font-size: 18px;
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    .Tbtn:hover {
+        border: none;
+        transform: scale(1.1);
+    }
+    
+    .Tbtn i {
+        margin-left: 4rem;
+    }
+    
+    .btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 7vh;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        margin-top: 5rem;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        color: white;
+        font-weight: 500;
+    }
+    
+    .btn:hover {
+        border: none;
+        transform: scale(1.1);
+    }
+    
+    .btn i {
+        margin-left: 6rem;
+        margin-top: 0.5rem;
+    }
+    
+    .blue {
+        background-color: #087E8C;
+        border-radius: 10px;
+        width: 214px;
+    }
+    
+    .green {
+        background-color: #A5D053;
+        border-radius: 10px;
+        width: 214px;
+    }
+    
+    .btn0 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 7vh;
+        width: 95%;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        margin-top: 3rem;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        color: white;
+        font-weight: 500;
+    }
+    
+    .btn0:hover {
+        border: none;
+        transform: scale(1.1);
+    }
+    
+    .btn1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 7vh;
+        width: 95%;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        margin-top: 3rem;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        color: white;
+        font-weight: 500;
+    }
+    
+    .btn1:hover {
+        border: none;
+        transform: scale(1.1);
+    }
+    
     .controls2 {
         display: flex;
         flex-direction: column;
@@ -389,14 +429,14 @@
         padding: 3rem;
     }
     
-    .btn4 {
+    .btn2 {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        height: 7vh;
-        width: 100%;
+        height: 6.5vh;
+        width: 50%;
         padding: 0.5rem;
-        margin-top: 2rem;
+        margin-top: 3.5rem;
         margin-right: 5rem;
         outline: none;
         cursor: pointer;
@@ -405,7 +445,28 @@
         font-weight: 500;
     }
     
-    .btn4:hover {
+    .btn2:hover {
+        border: none;
+        transform: scale(1.1);
+    }
+    
+    .btn3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 6.5vh;
+        width: 100%;
+        padding: 0.5rem;
+        margin-top: 3.5rem;
+        margin-right: 5rem;
+        outline: none;
+        cursor: pointer;
+        border: none;
+        color: white;
+        font-weight: 500;
+    }
+    
+    .btn3:hover {
         border: none;
         transform: scale(1.1);
     }
